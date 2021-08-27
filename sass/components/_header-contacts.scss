@@ -1,0 +1,34 @@
+// Шапка - Контакты
+.header__contact-list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header__contact-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header__contact-link {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $primary-text-color;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+    
+    &:hover,
+    &:focus {
+        color: $additional-color;
+    }
+}
+
+.header__contact-icon {
+    margin-right: 10px;
+
+    fill: currentColor;
+}

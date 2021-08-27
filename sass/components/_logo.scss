@@ -1,0 +1,20 @@
+// Логотип
+.logo {
+    font-family: $logo-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    text-decoration: none;
+
+    color: $additional-color;
+
+    &--dark {
+        color: $black-color;
+    }
+
+    &--light {
+        color: $white-color;
+    }
+}

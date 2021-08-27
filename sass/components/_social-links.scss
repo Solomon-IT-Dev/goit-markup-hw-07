@@ -1,0 +1,53 @@
+// Соцсети
+.social {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.social__link {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    background-color: $white-color;
+    color: $icon-color;
+
+    transform: scale(1);
+    transition-property: color, background-color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+
+    &:hover,
+    &:focus {
+        background-color: $additional-color;
+        color: $white-color;
+        transform: scale(1.2);
+    }
+}
+
+.social__icon {
+    fill: currentColor;
+}
+
+.social--alignment {
+    margin: 0;
+}
+
+.social__link--alt-color {
+    margin: 0;
+
+    background-color: #ffffff1a;
+    color: $white-color;
+
+    &:hover,
+    &:focus {
+        background-color: $additional-color;
+        color: $white-color;
+    }
+}

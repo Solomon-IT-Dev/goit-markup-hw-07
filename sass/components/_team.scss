@@ -1,0 +1,45 @@
+// Команда
+.section--alt-bg {
+    background-color: $primary-bg-color;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team__item {
+    flex-basis: calc((100% - #{$items-gap} * 3) / 4);
+
+    box-shadow: 0px 1px 3px #0000001f,
+        0px 1px 1px #00000024,
+        0px 2px 1px #00000033;
+    border: 0;
+    border-radius: 0px 0px 4px 4px;
+    background-color: $white-color;
+    overflow: hidden;
+
+    &:not(:last-child) {
+        margin-right: $items-gap;
+    }
+}
+
+.team__card-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team__member {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    text-transform: none;
+}
+
+.team__member-description {
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    font-weight: 400;
+}

@@ -1,0 +1,29 @@
+// Специализация студии
+.gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery__item {
+    position: relative;
+    overflow: hidden;
+
+    &:not(:last-child) {
+        margin-right: $items-gap;
+    }
+}
+
+.gallery__title {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 70px;
+
+    margin-bottom: 0;
+    padding-top: 27px;
+    text-align: center;
+
+    background-color: #2f303acc;
+    color: $white-color;
+}

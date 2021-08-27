@@ -1,0 +1,60 @@
+// Контейнер
+.container {
+    width: 1200px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header__container {
+    display: flex;
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+// Секции
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+    &--no-padding-top {
+        padding-top: 0;
+    }
+}
+
+// Главный стиль
+body {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    background-color: $white-color;
+    color: $primary-text-color;
+}
+
+// Изображения
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+// Ссылки
+.link {
+    text-decoration: none;
+}
+
+// Списки
+.list {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}

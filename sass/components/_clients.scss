@@ -1,0 +1,38 @@
+// Клиенты
+.clients {
+    display: flex;
+    justify-content: space-around;
+}
+
+.clients__item:not(:last-child) {
+    margin-right: $items-gap;
+}
+
+.clients__link {
+    width: 170px;
+    height: 92px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+    color: $icon-color;
+
+    transform: scale(1);
+    transition-property: color, border-color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+
+    &:hover,
+    &:focus {
+        color: $additional-color;
+        border-color: $additional-color;
+        transform: scale(1.2);
+    }
+}
+
+.clients__client-icon {
+    fill: currentColor;
+}

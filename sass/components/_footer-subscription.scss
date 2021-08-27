@@ -1,0 +1,54 @@
+// Футер - Подписка
+.subscription-box {
+    width: 570px;
+    margin-left: auto;
+}
+
+.subscription-box__title {
+    margin-bottom: 20px;
+
+    color: $white-color;
+}
+
+.subscription-box__form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscription-box__input {
+    width: 358px;
+
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    border-radius: 4px;
+    border: 1px solid #ffffff4d;
+    box-shadow: 0px 4px 4px #00000026;
+    background-color: transparent;
+    color: $white-color;
+
+    transition-property: background-color, border;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+    
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+    
+        color: #ffffff99;
+    }
+    
+    &:focus {
+        background-color: #ffffff1a;
+        border: 1px solid $additional-color;
+    }
+}
+
+.subscription-box__send-icon {
+    margin-left: 10px;
+
+    fill: $white-color;
+}

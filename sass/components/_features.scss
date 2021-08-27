@@ -1,0 +1,31 @@
+// Особенности
+.feature {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature__item {
+    width: calc((100% - #{$items-gap} * 3) / 4);
+
+    &:not(:last-child) {
+        margin-right: $items-gap;
+    }
+}
+
+.feature__box {
+    width: 270px;
+    height: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    border-radius: 4px;
+    background-color: $primary-bg-color;
+}
+
+.feature__text {
+    margin-top: 0;
+    margin-bottom: 0;
+}

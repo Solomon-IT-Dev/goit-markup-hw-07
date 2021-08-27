@@ -1,0 +1,141 @@
+// Кнопки
+.button {
+    display: inline-block;
+
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+
+    border: 0;
+    border-radius: 4px;
+}
+
+// Главная кнопка
+.button--primary {
+    min-width: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 32px;
+
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    box-shadow: 0px 4px 4px #00000026,
+        inset 0px 0px 0px 0px #0000004d;
+    background-color: $additional-color;
+    color: $white-color;
+
+    transform: scale(1);
+    transition-property: background-color, box-shadow, transform;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+
+    &:hover,
+    &:focus {
+        background-color: $btn-hover-color;
+    }
+    
+    &:active {
+        box-shadow: 0px 0px 0px #00000026,
+            inset 0px 0px 20px 8px #0000004d;
+        transform: scale(0.9);
+    }
+}
+
+// Кнопки фильтра
+.filter__button {
+    padding: 6px 22px;
+
+    font-weight: 500;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+
+    box-shadow: 0px 0px 0px #0000001a,
+        0px 0px 0px #00000014,
+        0px 0px 0px #0000001f,
+        inset 0px 0px 0px 0px #0000004d;
+    background-color: $primary-bg-color;
+    color: $title-text-color;
+
+    transform: scale(1);
+    transition-property: color, background-color, box-shadow, transform;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 3px 1px #0000001a,
+            0px 1px 2px #00000014,
+            0px 2px 2px #0000001f,
+            inset 0px 0px 0px 0px #0000004d;
+        background-color: $additional-color;
+        color: $white-color;
+    }
+    
+    &:active {
+        box-shadow: 0px 0px 0px #0000001a,
+            0px 0px 0px #00000014,
+            0px 0px 0px #0000001f,
+            inset 0px 0px 20px 8px #0000004d;
+        transform: scale(0.9);
+    }
+}
+
+// Кнопка закрытия модального окна
+.modal__button--close {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    margin-right: 8px;
+
+    border: 1px solid #0000001a;
+    border-radius: 50%;
+    background-color: $white-color;
+    color: $black-color;
+
+    transform: scale(1);
+    transition-property: color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+
+    &:hover,
+    &:focus {
+        color: $additional-color;
+        transform: scale(1.2);
+    }
+    
+    &:active {
+        color: $primary-text-color;
+        transform: scale(0.9);
+    }
+}
+
+.modal__close-icon {
+    fill: currentColor;
+}
+
+// Кнопка отправки формы
+.form__button {
+    margin-top: 30px;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+// Кнопка подписки
+.subscription-box__button {
+    margin: 0;
+    padding-left: 28px;
+    padding-right: 28px;
+}

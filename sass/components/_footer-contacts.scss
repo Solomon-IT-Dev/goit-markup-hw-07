@@ -1,0 +1,19 @@
+// Футер - Контакты
+.footer__contact-item:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+.footer__contact-link {
+    display: inline-block;
+
+    color: $secondary-text-color;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+    
+    &:hover,
+    &:focus {
+        color: $additional-color;
+    }
+}
